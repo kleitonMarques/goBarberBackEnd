@@ -2,9 +2,9 @@ import 'reflect-metadata';
 import { Router } from 'express';
 import CreateUserService from '../services/CreateUsersService'
 
-const UsersRouter = Router();
+const usersRouter = Router();
 
-UsersRouter.post('/', async (request, response) => {
+usersRouter.post('/', async (request, response) => {
   try {
 	const { name, email, password } = request.body
 	const createUser = new CreateUserService()
@@ -29,4 +29,4 @@ UsersRouter.post('/', async (request, response) => {
   }
 });
 
-export default UsersRouter;
+export default usersRouter;
