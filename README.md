@@ -52,7 +52,7 @@ yarn typeorm migration:revert
 
 - Caso precise criar um nova migration
 ```
-yarn typeorm migration:create -n NameMigration
+yarn typeorm migration:create -n {NameMigration}
 ```
 
 - Para verificar as migrations que foram executadas
@@ -61,10 +61,10 @@ yarn typeorm migration:show
 ```
 
 - Caso a migrations ja tenha sido mergeada, não é possivel fazer uma alteração no banco utilizando o 'revert', é necessário criar outra migration
-
+yarn typeorm migration:create -n {AlterProviderFieldToProviderId}
 
 ## INICIANDO PROJETO NO AMBIENTE DE LOCAL
-- Instalar todas as dependência
+- Instalar todas as dependências
 ```
 yarn
 ```
